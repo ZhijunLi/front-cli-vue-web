@@ -1,0 +1,50 @@
+/* ========================= 字体变量 ========================= */
+// 排名、奖金等显示文字
+$font_N1: FONT_N1;
+// 数据
+$font_N2: FONT_N2;
+
+@font-face {
+  font-family: $font_N1;
+  src:url("../fonts/N1-Montserrat-SemiBold.ttf");
+}
+@font-face {
+  font-family: $font_N2;
+  src:url("../fonts/N2-Oswald-Medium.ttf");
+}
+
+/* ========================= 字号 ========================= */
+$font_size_TS: 22px;/*px*/
+$font_size_T0: 24px;/*px*/
+$font_size_T1: 26px;/*px*/
+$font_size_T2: 28px;/*px*/
+$font_size_T3: 32px;/*px*/
+$font_size_T4: 34px;/*px*/
+$font_size_T5: 36px;/*px*/
+$font_size_T6: 38px;/*px*/
+$font_size_T7: 40px;/*px*/
+$font_size_T8: 44px;/*px*/
+$font_size_T9: 48px;/*px*/
+$font_size_T10: 56px;/*px*/
+$font_size_T11: 60px;/*px*/
+$font_size_T12: 64px;/*px*/
+$font_size_T20: 80px;/*px*/
+
+
+
+/* ========================= 颜色 ========================= */
+$color_C1: #1C1F30;
+$color_C2: #3B435A;
+$color_C3: #8B96A8;
+$color_C4: #BECCE2;
+$color_C5: #EAEFF6;
+$color_C6: #242B40;
+$color_C7: #2C354F;
+$color_C8: #596493;
+$color_C9: #FFFFFF;
+$color_C10: #161826;
+
+$color_C11: #922F3A;
+$color_C12: #D33131;
+$color_C13: #389262;
+$color_C14: #66F08A;

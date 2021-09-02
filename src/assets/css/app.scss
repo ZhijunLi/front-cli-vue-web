@@ -1,0 +1,12 @@
+@import "global_var";
+
+.app_theme{
+  background-color: $color_C1;
+  color: #fff;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.hidden{
+  display: none;
+}
