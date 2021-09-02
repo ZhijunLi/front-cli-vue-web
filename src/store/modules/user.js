@@ -1,8 +1,8 @@
-import { setToken } from '@/utils/auth'
+import { setToken, getToken } from '@/utils/auth'
 const user = {
     namespaced: true,
     state:{
-        token: JSON.parse(localStorage.getItem('app-token')) || '',
+        token: getToken() || '',
         id: 0,
         uuid: 0,
         mobile: '',
@@ -12,8 +12,8 @@ const user = {
 
     mutations: {
         SET_TOKEN: (state, token)=>{
-            // state.token = token
-            localStorage.setItem('app-token', JSON.stringify(token))
+            state.token = token
+            setToken(token)
         },
         SET_USER: (state, user) => {
             state.id = user.id

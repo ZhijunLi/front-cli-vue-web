@@ -6,7 +6,6 @@ import store from './store'
 import request from './api/request'
 import api from './api'
 import setting from "@/settings";
-import appSDK from "@/utils/h5-app";
 import 'vant/lib/index.css';
 import '@/assets/css/reset.css'
 import "@/assets/css/app.scss"
@@ -59,7 +58,6 @@ Vue.use({
   install(Vue) {
     Vue.prototype.$request = request;
     Vue.prototype.$api = api;
-    Vue.prototype.$app_sdk = appSDK;
     // 配置项
     Vue.prototype.$setting = setting
   }

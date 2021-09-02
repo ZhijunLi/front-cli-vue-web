@@ -2,6 +2,9 @@ import setting from '@/settings'
 const index = {
     user:{
         info: {url: '/app/app_config', method: 'post'},
+    },
+    wechat:{
+        get_jssdk_sign: {url: '', method: 'post'},
     }
 }
 

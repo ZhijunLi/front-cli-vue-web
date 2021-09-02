@@ -113,15 +113,6 @@ function onResponseError(error){
     // })
 
     // store.dispatch('user/setToken','')
-    this.$app_sdk.getAppToken().then(data=>{
-      if(data.token){
-        store.dispatch("user/setToken", data.token)
-        store.dispatch("shop/setReloadCart", true)
-        store.dispatch("shop/setReloadCartIndex", true)
-        store.dispatch("shop/setReloadMine", true)
-        store.dispatch("shop/setReloadOrder", true)
-      }
-    })
     return Promise.reject(error)
   }
 
