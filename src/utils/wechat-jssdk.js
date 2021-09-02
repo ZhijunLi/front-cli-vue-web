@@ -1,4 +1,4 @@
-import apiUrl from "@/api";
+import api from "@/api";
 import request from "@/api/request";
 import wx from 'weixin-js-sdk'
 
@@ -48,7 +48,7 @@ export function getWxJssdkSign(param)
     return new Promise((resolve, reject)=>{
         param.jsApiList = JSON.stringify( param.jsApiList)
         request({
-            url: apiUrl.wechat.get_jssdk_sign,
+            url: api.wechat.get_jssdk_sign,
             data: param
         }).then((data)=>{
             wx.config(data);
